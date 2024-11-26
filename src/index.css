@@ -7,6 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -17,6 +20,8 @@ code {
 .c-navbar {
   background-color: #272727;
   color: #F4E3D2;
+  position: fixed;
+  width: 100%;
 }
 .c-navbar ul {
   display: flex;
@@ -96,7 +101,7 @@ code {
 .c-header-description {
   display: flex;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
   flex-direction: column;
 }
 .c-header1 {
@@ -105,3 +110,41 @@ code {
 }
 
 /* HOT DEALS */
+.c-hotdeals {
+  margin-bottom: 40px;
+}
+.c-card-relative {
+  position: relative;
+  cursor: pointer;
+}
+.c-banner-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  font-family: 'Geologica';
+}
+.c-banner-title h1 {
+  font-weight: 400;
+}
+.c-banner-title h4 {
+  font-weight: lighter;
+}
+.c-card-relative {
+  color: #fff;
+}
+.c-card-relative img {
+  width: 100%;
+}
+.c-card-relative span {
+  position: absolute;
+  bottom:0;
+  left: 20px;
+  font-weight: 600;
+  font-size:x-large;
+}
+@media only screen and (max-width: 767px) {
+  .c-card-relative span {
+    font-size: smaller;
+  }
+}
