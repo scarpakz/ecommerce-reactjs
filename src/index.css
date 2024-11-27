@@ -227,3 +227,27 @@ code {
     height: 40vh;
   }
 }
+
+/* Everyone's list */
+.c-everyonelist-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.c-everyonelist-item img {
+  position: relative;
+}
+.c-everyonelist-item span {
+  color: #fff;
+  font-family: 'Geologica';
+  position: absolute;
+  font-size: 48px;
+  text-shadow: 1px 5px 6px black;
+}
+@media only screen and (max-width: 1200px) {
+  .c-everyonelist-item {
+    margin: 20px 0;
+  }
+}
