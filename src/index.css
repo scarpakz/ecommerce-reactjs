@@ -251,3 +251,55 @@ code {
     margin: 20px 0;
   }
 }
+
+/* Download App */
+.c-download-phone {
+  width: 100%;
+}
+.c-downloadapp-left-column {
+  font-family: 'Geologica';
+}
+.c-downloadapp-links {
+  display: flex;
+  margin-top: 30px;
+}
+.c-downloadapp-links img {
+  width: 200px;
+  margin-right: 10px;
+}
+.c-downloadapp-left-column h1 {
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 48px;
+}
+.c-downloadapp-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .c-downloadapp-left-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .c-downloadapp-links {
+    display: block;
+  }
+  .c-downloadapp-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-download-phone {
+    width: 100%;
+  }
+  .c-phone-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    display: none;
+  }
+}
