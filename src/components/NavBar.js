@@ -8,7 +8,7 @@ import search from '../assets/search.png'
 import heart from '../assets/heart.png'
 import cart from '../assets/cart.png'
 import user from '../assets/user.png'
-import { MenuIcon } from "../assets/icon/MenuIcon"
+import { MenuIcon } from "../icon/MenuIcon"
 
 export const NavBar = () => {
     return (
