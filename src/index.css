@@ -387,4 +387,29 @@ code {
   .c-footer{
     text-align: center;
   }
+  .left-nav {
+    display: block;
+  }
+
+}
+
+/* LEFT NAV */
+.left-nav {
+  background-color: #272727;
+  color: #fff;
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+}
+.left-nav .left-navlinks {
+  list-style: none;
+  padding-right: unset;
+}
+.left-nav .left-navlinks li:hover {
+  background-color: #5b2222;
+}
+.left-nav .left-navlinks li {
+  padding: 15px 0;
 }
