@@ -131,7 +131,8 @@ code {
   .c-right-column-mobile button {
     background-color: unset;
     color: #fff;
-    border: solid 1px #fff;
+    border: solid 1px #b6b6b6;
+    padding: 5px;
   }
   .c-right-column-mobile button:hover {
     background-color: #F4E3D2;
@@ -180,6 +181,14 @@ code {
 @media only screen and (max-width: 767px) {
   .c-card-relative span {
     font-size: smaller;
+  }
+  .c-hotdeals-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+  .c-hotdeals-responsive .c-card-relative {
+    margin: 10px 0;
+    font-size: 4vw;
   }
 }
 
@@ -239,15 +248,18 @@ code {
   justify-content: center;
   position: relative;
   cursor: pointer;
+  text-align: center;
 }
 .c-everyonelist-item img {
   position: relative;
+  height: auto;
+  width: 100%;
 }
 .c-everyonelist-item span {
   color: #fff;
   font-family: 'Geologica';
   position: absolute;
-  font-size: 48px;
+  font-size: 4vw;
   text-shadow: 1px 5px 6px black;
 }
 @media only screen and (max-width: 1200px) {

@@ -17,7 +17,7 @@ export const HotDeals = () => {
                         <h4>DEALS TOO GOOD TO MISS</h4>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="c-hotdeals-responsive">
                     <Col>
                         <div className="c-card-relative">
                             <img src={shoes} alt="shoes"/>
