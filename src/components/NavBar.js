@@ -15,8 +15,16 @@ export const NavBar = () => {
         <>
             <nav className="c-navbar">
                 <Container>
-                    <Row>
+                    <Row className="row-navbar">
+                        <Col className="c-right-column-mobile">
+                            <button>
+                                <MenuIcon />
+                            </button>
+                        </Col>
                         <Col className="c-left-column">
+                            <a>
+                                <img src={brand} alt="brand" className="brand-responsive"/>
+                            </a>
                             <ul className="navlinks">
                                 <li className="c-brand">
                                     <a>
@@ -38,11 +46,6 @@ export const NavBar = () => {
                                 </div>
                                 <div>
                                     <a className="c-nav-cart-link">
-                                        <img src={heart} alt="heart"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="c-nav-cart-link">
                                         <img src={cart} alt="cart"/>
                                     </a>
                                 </div>
@@ -53,32 +56,7 @@ export const NavBar = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col className="c-right-column-mobile">
-                            <button>
-                                <MenuIcon />
-                            </button>
-                            {/* <div className="c-cart-links">
-                                <div className="c-search">
-                                    <img src={search}/>
-                                    <input type="text" name="search" placeholder="SEARCH"/>
-                                </div>
-                                <div>
-                                    <a className="c-nav-cart-link">
-                                        <img src={heart} alt="heart"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="c-nav-cart-link">
-                                        <img src={cart} alt="cart"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a className="c-nav-cart-link">
-                                        <img src={user} alt="user"/>
-                                    </a>
-                                </div>
-                            </div> */}
-                        </Col>
+                        
                     </Row>
                 </Container>
             </nav>

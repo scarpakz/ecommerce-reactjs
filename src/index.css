@@ -116,16 +116,25 @@ code {
 .c-right-column-mobile {
   display: none;
 }
+.brand-responsive {
+  display: none;
+  padding-bottom: 10px;
+}
 @media only screen and (max-width: 991px) {
+  .brand-responsive {
+    display: flex;
+  }
   .c-header-description {
     text-align: center;
   }
   .c-left-column {
     font-size: 14px;
+    display: flex;
+    justify-content: center;
   }
   .c-right-column-mobile {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
   }
   .c-right-column-mobile button {
@@ -139,8 +148,16 @@ code {
     transition: .2s;
     color: #272727;
   }
-  .c-right-column {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .c-search {
     display: none;
+  }
+  .navlinks {
+    display: none !important;
   }
 }
 
