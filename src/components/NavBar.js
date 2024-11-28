@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { 
     Container,
     Row,
@@ -10,14 +11,22 @@ import cart from '../assets/cart.png'
 import user from '../assets/user.png'
 import { MenuIcon } from "../icon/MenuIcon"
 
+
 export const NavBar = () => {
+
+    const [isShowSideBar, setIsShowSideBar] = useState(false)
+
+    const sideBarToggle = () => {
+        setIsShowSideBar((prevState) => !prevState)
+    }
+
     return (
         <>
             <nav className="c-navbar">
                 <Container>
                     <Row className="row-navbar">
                         <Col className="c-right-column-mobile">
-                            <button>
+                            <button onClick={sideBarToggle}>
                                 <MenuIcon />
                             </button>
                         </Col>
@@ -56,7 +65,6 @@ export const NavBar = () => {
                                 </div>
                             </div>
                         </Col>
-                        
                     </Row>
                 </Container>
             </nav>
