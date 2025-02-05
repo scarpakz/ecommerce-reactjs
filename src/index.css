@@ -20,67 +20,6 @@ code {
     monospace;
 }
 
-/* NavBar */
-.c-navbar {
-  background-color: #272727;
-  color: #F4E3D2;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-}
-.c-navbar ul {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-.c-brand {
-  padding-bottom: 5px;
-  padding-top: 0 !important;
-}
-.c-navbar ul li {
-  list-style-type: none;
-  padding: 20px 10px;
-}
-.c-navbar ul li a {
-  font-weight: bold;
-}
-.c-cart-links input::placeholder {
-  color:#F4E3D2;
-  padding-left: 20px;
-}
-.c-search {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.c-search input {
-  margin-right: 20px;
-}
-.c-search img {
-  position: absolute;
-  padding-left: 15px;
-}
-.c-cart-links input{
-  background-color: #272727;
-  border: solid 1px #fff;
-  box-sizing: border-box;
-  color: #F4E3D2;
-  font-size: 14px;
-  padding: 5px 5px 5px 40px;
-}
-.c-right-column {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-}
-.c-cart-links {
-  display: flex;
-  align-items: center;
-}
-.c-nav-cart-link {
-  padding: 0 10px;
-}
 
 /* Header */
 .c-header-bg {

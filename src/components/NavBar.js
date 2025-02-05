@@ -38,7 +38,7 @@ export const NavBar = () => {
                 <NavItem><Link to="/sale">Sale</Link></NavItem>
               </NavList>
             </div>
-          )}
+            )}
           <Navbar>
             <Container>
               <Row>
