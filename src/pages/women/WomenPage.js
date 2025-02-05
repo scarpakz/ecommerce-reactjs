@@ -22,10 +22,14 @@ export const WomenPage = () => {
                             />
                         </Col>
                     </Row>
+                    <hr/>
                     <Row>
-                        <CategoryTitle>Women</CategoryTitle>
-                        <CustomDropdown />
+                        <CategoryFilter>
+                            <CategoryTitle>Women</CategoryTitle>
+                            <CustomDropdown />
+                        </CategoryFilter>
                     </Row>
+                    <hr/>
                 </Container>
             </CategoryContainer>
         </>
@@ -39,4 +43,9 @@ const CategoryTitle = styled.h1`
     color: #222;
     text-transform: uppercase;
     font-weight: 600;
+`
+const CategoryFilter = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `
