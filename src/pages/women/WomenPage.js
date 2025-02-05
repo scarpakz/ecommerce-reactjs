@@ -9,7 +9,7 @@ import { Breadcrumbs } from "../../components/Breadcrumbs"
 export const WomenPage = () => {
     return (
         <>
-            <WomenContainer>
+            <CategoryContainer>
                 <Container>
                     <Row>
                         <Col>
@@ -21,13 +21,20 @@ export const WomenPage = () => {
                             />
                         </Col>
                     </Row>
+                    <Row>
+                        <CategoryTitle>Women</CategoryTitle>
+                    </Row>
                 </Container>
-
-            </WomenContainer>
+            </CategoryContainer>
         </>
     )
 }
 
-const WomenContainer = styled.div`
+const CategoryContainer = styled.div`
     padding-top: 100px;
+`
+const CategoryTitle = styled.h1`
+    color: #222;
+    text-transform: uppercase;
+    font-weight: 600;
 `
