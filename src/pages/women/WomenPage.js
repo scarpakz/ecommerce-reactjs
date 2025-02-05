@@ -5,6 +5,7 @@ import {
 } from "react-bootstrap"
 import styled from "styled-components"
 import { Breadcrumbs } from "../../components/Breadcrumbs"
+import {CustomDropdown} from "../../components/CustomDropdown"
 
 export const WomenPage = () => {
     return (
@@ -23,6 +24,7 @@ export const WomenPage = () => {
                     </Row>
                     <Row>
                         <CategoryTitle>Women</CategoryTitle>
+                        <CustomDropdown />
                     </Row>
                 </Container>
             </CategoryContainer>

@@ -2,8 +2,8 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 export const CustomDropdown = () => {
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
+    <Dropdown data-bs-theme="dark">
+      <Dropdown.Toggle variant="secondary" id="dropdown-basic">
         Sort By
       </Dropdown.Toggle>
 
